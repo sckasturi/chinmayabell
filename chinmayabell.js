@@ -24,4 +24,6 @@ function playBell() {
 	audio.play();
 }
 
+playBell();
 runOnTimes(playBell, getTime);
+
