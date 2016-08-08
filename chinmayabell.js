@@ -1,7 +1,7 @@
 function runOnTimes(cb, t) {
     (function loop() {
  
-        if (t(10, 10) === true || t(11, 10) === true || t(13, 0) === true || t(14, 0) === true || t(15, 5) === true || t(11, 0) === true || t(12, 0) === true || t(13, 45) === true || t(14, 45) === true || t(15, 50) === true || t(18, 11) === true) {
+        if (t(10, 10) === true || t(11, 10) === true || t(13, 0) === true || t(14, 0) === true || t(15, 5) === true || t(11, 0) === true || t(12, 0) === true || t(13, 45) === true || t(14, 45) === true || t(15, 50) === true || t(18, 14) === true) {
             cb(); 
         }
         now = new Date();                  // allow for time passing
