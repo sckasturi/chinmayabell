@@ -24,5 +24,5 @@ function playBell() {
 	audio.play();
 }
 
-runOnTimes(function() { alert("dank") }, getTime);
+runOnTimes(playBell, getTime);
 
