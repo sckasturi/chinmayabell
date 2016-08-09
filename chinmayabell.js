@@ -1,5 +1,5 @@
 function runOnTimes(cb, t) {
-	document.getElementById("dank").innerHTML = "Program Started!";
+	document.getElementById("dank").innerHTML = "Program started!";
     (function loop() {
  
         if (t(10, 10) === true || t(11, 10) === true || t(13, 0) === true || t(14, 0) === true || t(15, 5) === true || t(11, 0) === true || t(12, 0) === true || t(13, 45) === true || t(14, 45) === true || t(15, 50) === true || t(8, 30) === true) {
@@ -21,6 +21,8 @@ function getTime(h, m) {
 
 function playBell() {
 	console.log("playing music..."); 
+	var d = new Date();
+	document.getElementById("dank").innerHTML = "program last run at " + d.getHours() + ":" + d.getMinutes(); 
 	var audio = new Audio('bell.mp3');
 	audio.play();
 }
