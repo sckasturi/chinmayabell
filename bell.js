@@ -32,7 +32,7 @@ function getTime(h, m) {
 	return false;
 }
 
-function playBell() {t
+function playBell() {
 	console.log("playing music..."); 
 	var d = new Date();
 	document.getElementById("dank").innerHTML = "Program last run at " + d.getHours() + ":" + d.getMinutes(); 
